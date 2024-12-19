@@ -44,12 +44,11 @@ button {
 }
 
 button:hover {
-  background-color: #ff0066;
+  background-color: rgb(174, 0, 255);
 }
 
 #task-list .task {
   display: flex;
-  justify-content: space-between;
   background: #f1f1f1;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
@@ -61,6 +60,23 @@ button:hover {
   color: gray;
 }
 
+.right-btn {
+  justify-content: space-between;
+  margin-left: 350px;
+  
+}
+.done-btn {
+  background-color: chartreuse;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.done-btn:hover {
+  background-color: rgb(54, 109, 0);
+}
 .delete-btn {
   background-color: #e74c3c;
   color: white;

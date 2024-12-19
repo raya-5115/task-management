@@ -16,10 +16,13 @@ function addTask(task) {
     taskItem.className = 'task';
     taskItem.innerHTML = `
         <span>${task}</span>
+        <div class="right-btn">
+        <button class ="done-btn">Finish</button>
         <button class="delete-btn">Delete</button>
+        </div>
     `;
 
-    taskItem.querySelector('span').addEventListener('click', function () {
+    taskItem.querySelector('.done-btn').addEventListener('click', function () {
         taskItem.classList.toggle('completed');
     });
 
@@ -69,10 +72,13 @@ function loadTasks() {
       taskItem.className = 'task';
       if (task.completed) taskItem.classList.add('completed');
       taskItem.innerHTML = `
-          <span>${task.text}</span>
-          <button class="delete-btn">Delete</button>
+        <span>${task.text}</span>
+        <div class="right-btn">
+        <button class ="done-btn">Finish</button>
+        <button class="delete-btn">Delete</button>
+        </div>
       `;
-      taskItem.querySelector('span').addEventListener('click', function () {
+      taskItem.querySelector('.done-btn').addEventListener('click', function () {
           taskItem.classList.toggle('completed');
           saveTasks();
       });
