@@ -2,11 +2,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #dadada;
+  background-color: #344e5c;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
 }
 
 header {
-  background-color: #ff0066;
+  background-color: #4ab19d;
   color: white;
   text-align: center;
   padding: 1rem;
@@ -16,9 +19,16 @@ main {
   max-width: 600px;
   margin: 2rem auto;
   padding: 1rem;
-  background: white;
+  background: #efc958;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 10px;
+  background-color: #c5fff3; 
 }
 
 form {
@@ -36,7 +46,7 @@ input {
 
 button {
   padding: 0.5rem 1rem;
-  background-color: #ff0066;
+  background-color: #ef3d59;
   color: white;
   border: none;
   border-radius: 4px;
@@ -44,15 +54,18 @@ button {
 }
 
 button:hover {
-  background-color: rgb(174, 0, 255);
+  background-color: #9f293a;
 }
 
 #task-list .task {
   display: flex;
-  background: #f1f1f1;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
   border-radius: 4px;
+  flex-grow: 1;
 }
 
 #task-list .task.completed span {
@@ -61,13 +74,14 @@ button:hover {
 }
 
 .right-btn {
-  justify-content: space-between;
-  margin-left: 350px;
+  display: flex;
+  gap: 10px;
+  margin-left: 300px;
   
 }
 .done-btn {
   background-color: chartreuse;
-  color: white;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
@@ -78,8 +92,8 @@ button:hover {
   background-color: rgb(54, 109, 0);
 }
 .delete-btn {
-  background-color: #e74c3c;
-  color: white;
+  background-color: #ff0000;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
